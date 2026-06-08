@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>Galeri Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="https://galerimisbah.blogspot.com/">Home</a>
+        <a href="https://galerimisbah.blogspot.com/">📂 Koleksi</a>
+        <a href="https://galerimisbah.blogspot.com/">Tentang</a>
+        <a href="https://galerimisbah.blogspot.com/">Kontak</a>
+    </div>
+
+    <div class="marquee-text">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            📢 Selamat datang di galeri Amelia Mutya! Tonton Dan Download koleksi video eksklusifnya di bawah ini TANPA IKLAN! | 📢 Sumber Video Di Dapatkan Dari https://uc-share.com/s/57ab5f85b20e4 Dan Dari Sosmed Lainnya |📢 Ini Situs Dibuat Hanya Untuk Koleksi Pribadi Tidak Diperjual Belikan, Pemilik @MisbahululAzmi .|
+        </marquee>
+    </div>
+
+    <center>
+        <button onclick="tampilkanSemuaItem()" class="btn-reset">
+            🔄 Tampilkan Semua Video
+        </button>
+    </center>
+
+    <div class="grid-container">
+        
+        <div class="grid-item" data-tag="kucing, macan">
+            <a href="https://www.google.com" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 1" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="title-link"><p>Kucing Besar 1</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'kucing')">kucing</button>
+                <button class="badge-tag" onclick="cariTag(event, 'macan')">macan</button>
+            </div>
+        </div>
+
+        <div class="grid-item" data-tag="kucing">
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 2" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="title-link"><p>Kucing Besar 2</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'kucing')">kucing</button>
+            </div>
+        </div>
+
+        <div class="grid-item" data-tag="macan, singa">
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 3" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="title-link"><p>Kucing Besar 3</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'macan')">macan</button>
+                <button class="badge-tag" onclick="cariTag(event, 'singa')">singa</button>
+            </div>
+        </div>
+
+        <div class="grid-item" data-tag="singa">
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="media-link">
+                <div class="video-wrapper">
+                    <div class="thumbnail">
+                        <img alt="Gambar 4" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                        <div class="video-overlay"><div class="play-icon"></div></div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="title-link">
+                <p class="video-title">Uji Kucing Besar 4 Yos Bagus Tikus Tikus Keluar 30 Yung Bihira Mag Simba Pero Madalas Naman Lumuhod sa Boyfriend Niya. HIHI</p>
+            </a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'singa')">singa</button>
+            </div>
+        </div>
+
+        <div class="grid-item" data-tag="kucing">
+            <a href="https://www.google.com" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 5" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="title-link"><p>Kucing Besar 5</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'kucing')">kucing</button>
+            </div>
+        </div>
+
+        <div class="grid-item" data-tag="macan">
+            <a href="https://www.google.com" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 6" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="title-link"><p>Kucing Besar 6</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'macan')">macan</button>
+            </div>
+        </div>            
+        
+        <div class="grid-item" data-tag="singa, kucing">
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="media-link">
+                <div class="video-wrapper">
+                    <div class="thumbnail">
+                        <img alt="Gambar 7" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                        <div class="video-overlay"><div class="play-icon"></div></div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://tmpigaspro.blogspot.com/2025/07/wartna-colkat.html?m=1#" class="title-link">
+                <p class="video-title">Uji Kucing Besar 7000 Yos Bagus Kucing Besar 7yang Bihira Mag Simba Pero Madalas Naman Lumuhod sa Boyfriend Niya. HIHI</p>
+            </a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'singa')">singa</button>
+                <button class="badge-tag" onclick="cariTag(event, 'kucing')">kucing</button>
+            </div>
+        </div> 
+
+        <div class="grid-item" data-tag="kucing">
+            <a href="https://www.google.com" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 8" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="title-link"><p>Kucing Besar 8</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'kucing')">kucing</button>
+            </div>
+        </div>
+
+        <div class="grid-item" data-tag="macan">
+            <a href="https://www.google.com" class="media-link">
+                <div class="video-wrapper">
+                    <img alt="Gambar 9" src="https://images2.imgbox.com/f1/30/V3Xq7GcB_o.jpg"/>
+                    <div class="video-overlay"><div class="play-icon"></div></div>
+                </div>
+            </a>
+            <a href="https://www.google.com" class="title-link"><p>Kucing Besar 9</p></a>
+            <div class="tag-container">
+                <button class="badge-tag" onclick="cariTag(event, 'macan')">macan</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pagination-bar">
+        <div class="page-links">
+            <a class="page-btn active" href="https://galerimisbah.blogspot.com/">1</a>
+            <a class="page-btn" href="#page2">2</a>
+            <a class="page-btn" href="#page3">3</a>
+            <a class="page-btn" href="#page4">4</a>
+            <a class="page-btn" href="#page5">5</a>
+            <a class="page-btn" href="#page6">6</a>
+        </div>
+        <p class="made-in">Made in Misbah &#169; 2025</p>
+    </div>
+
+    <div id="modal-iklan-hitam">
+        <div class="iklan-konten-hitam">
+            <span class="tutup-iklan-merah" onclick="tutupIklanHitam()">X</span>
+            <a class="iklan-link-hitam" href="https://link-iklan-topup.com" target="_blank">
+                <img alt="Iklan Banner" class="iklan-gambar-hitam" src="https://images2.imgbox.com/79/e1/xJhERXf9_o.jpg"/>
+            </a>
+            <div id="countdown-timer">Iklan otomatis menutup dalam 4 detik.</div>
+        </div>
+    </div>
+
+    <div class="popup-ads" id="adsPopup">
+        <div class="popup-content">
+            <span class="close" onclick="document.getElementById('adsPopup').style.display='none'">&#10006;</span>
+            <p style="font-size:20px; font-weight:bold; margin-bottom:12px; color:#fff;">Topup Murah Cepat Aman 🔥</p>
+            <a href="https://link-iklan-topup.com" target="_blank">
+                <img alt="Iklan Topup" src="https://imgkub.com/images/2025/10/19/1000211791.jpg" style="width:100%; border-radius:12px;"/>
+            </a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
